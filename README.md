@@ -9,8 +9,11 @@ According to World Health Organization approximately 15 million preterm deliveri
 
 # EFFECTS OF CONIZATION SURGERY ON PRETERM BIRTH
 Women who have been diagnosed with Cervical Intra epithelial Neoplasia (a pre- cancerous condition) undergo conization surgeries. These conization procedures leave a negative impact on a woman's pregnancy and greatly increases the risk of preterm birth.
+
 As a result, pregnant women who underwent excisional surgeries (conization) for cervical intraepithelial neoplasia (CIN) display high risks of preterm birth.
+
 Therefore, it is crucial to predict the risks of preterm birth amongst women in their post conization periods. We applied machine learning approaches to correctly predict preterm birth delivery of women in their post conization.
+
 # RELATED WORK
 
 
@@ -23,7 +26,9 @@ conducted studies of Korean patients who had cervical conization and delivered s
 supervised a retrospective analysis in clinics that specializes in caring pregnant women of post conization phase. Their research discovered that the risk of preterm birth can be reduced with a targeted cervical cerclage.
 # Crane et. al
 conducted a prospective cohort study in a healthcare center which included women undergone surgical treatments for CIN such as CKC, LEEP, or cryotherapy earlier and with singleton pregnancies. Based on their research, LEEP and CKC lead to spontaneous preterm delivery. A cutoff of <3.0 cm was found the best for predicting spontaneous preterm delivery in LEEP.
+
  # METHADOLOGY
+ 
  ![PRETERM-2](https://github.com/Manju567/PRETERM-BIRTH-PREDICTION/assets/116549275/c984d45e-8bd6-45c3-b7b5-69a2aecf1f34)
 
 
@@ -32,25 +37,42 @@ conducted a prospective cohort study in a healthcare center which included women
 **Data Acquisition:**                                                            
 
 **Dataset Details
+
 Data Preprocessing:
+
 Preprocess predictor attributes •Preprocess class attributes
+
 Scaling (Min-Max)
+
 Source: Dryad
+
 Instance: 730, Features: 7 Missing Values: Yes
+
 Data Type: Nominal,
+
 Numerical
+
 Class Imbalance Issue: 613 Term/71 Preterm; SMOTE
 
+
   # Features
+  
    age
-   ethnicity
-   cervical length during weeks
-   13-15
-   e cervical length during weeks 16-18
- Train set: 80%
+   
+  ethnicity
+   
+  cervical length during weeks 13-15
+   
+ e cervical length during weeks 16-18
+   
+  Train set: 80%
+ 
  cervical length during weeks 20-22
+ 
  gestation at spontaneous
+ 
  delivery
+ 
  cerclage
 
 
@@ -64,23 +86,35 @@ Class Imbalance Issue: 613 Term / 71 Preterm; SMOTE
 # Split Dataset:**
 
 Train set: 80%
+
 Test set: 20%
+
 # CLASSIFIERS USED AND HYPER-PARAMETER TUNING
 
 ZERO-R
+
 LOGISTIC REGRESSION
+
 NAIVE BAYES
+
 SUPPORT VECTOR MACHINE
+
 K-NEAREST NEIGHBOR
+
 DECISION TREE
+
 10-fold cross validation was done on each of the classifiers. Hyper-parameters were tuned accordingly to achieve the best results.
 
  # Equations of the performance metrics used:
 
 False Positive Rate = FP / TN+FP
+
 Precision =TP / TP+FP
+
 Precision = TP / TP+FP
+
 Recall = TP / TP+FN
+
 F1-Measure = 2 x recall x precision / precision + recall
 
  # CLASSIFIERS USED AND HYPER-PARAMETER TUNING
