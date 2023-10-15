@@ -63,7 +63,7 @@ Class Imbalance Issue: 613 Term/71 Preterm; SMOTE
    
   cervical length during weeks 13-15
    
- e cervical length during weeks 16-18
+ cervical length during weeks 16-18
    
   Train set: 80%
  
